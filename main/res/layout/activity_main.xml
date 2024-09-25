@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CADASTRO DE ALUNO"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:layout_margin="25sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preencha as informações abaixo com seus dados"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="25sp"/>
+            <EditText
+                android:id="@+id/edNome"
+                android:hint="informe o seu nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="360sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="25sp"/>
+            <EditText
+                android:id="@+id/edEmail"
+                android:hint="informe o seu email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="360sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idade"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="25sp"/>
+            <EditText
+                android:id="@+id/edIdade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="informe sua idade"
+                android:width="360sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disciplina"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="25sp"/>
+            <EditText
+                android:id="@+id/edDisciplina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="360sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="informe a dsciplina"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota 1º Bimestre"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="25sp"/>
+            <EditText
+                android:id="@+id/edNotaPriBimestre"
+                android:hint="informe a nota do 1º bimestre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="360sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota 2º Bimestre"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginLeft="25sp"
+                android:layout_marginTop="25sp"/>
+            <EditText
+                android:id="@+id/edNotaSegBimestre"
+                android:hint="informe a nota do 2º bimestre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="360sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/btEnviar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="180sp"
+                    android:height="55sp"
+                    android:text="Enviar"
+                    android:textStyle="bold"
+                    android:layout_gravity="center|right"
+                    android:layout_margin="25sp"
+                    />
+                <Button
+                    android:id="@+id/btLimpar"
+                    android:width="100sp"
+                    android:height="55sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:text="Limpar campos"
+                    android:textStyle="bold"
+                    android:layout_margin="10sp"
+                    android:layout_marginRight="20sp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvInformacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
